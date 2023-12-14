@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Http\Resources\Stress\SeedTreatment\Lists;
+
+use Illuminate\Http\Resources\Json\JsonResource;
+
+class SeedTreatmentListResource extends JsonResource
+{
+    /**
+     * Transform the resource into an array.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return array
+     */
+    public function toArray($request)
+    {
+        return [
+            'CommodityID' => $this->CommodityID,
+            'VarietyID' => $this->VarietyID,
+            'UomID' => $this->UomID,
+            'Name' => $this->Name,
+            'Dose' => $this->Dose,
+        ];
+    }
+}
